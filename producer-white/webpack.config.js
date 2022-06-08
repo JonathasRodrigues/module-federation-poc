@@ -53,10 +53,7 @@ module.exports = (_, argv) => ({
       filename: 'remoteEntry.js',
       remotes: {
         'mf-product': `product@${
-          argv.mode === 'development' ? 'http://localhost:3001/' : 'https://module-federation-poc-white.vercel.app'
-        }/remoteEntry.js`,
-        'mf-sales': `sales@${
-          argv.mode === 'development' ? 'http://localhost:3005/' : 'https://module-federation-poc-white.vercel.app'
+          argv.mode === 'development' ? 'http://localhost:3001/' : 'https://module-federation-poc-product.vercel.app'
         }/remoteEntry.js`
       },
       exposes: {},
