@@ -4,9 +4,10 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 
 const deps = require('./package.json').dependencies;
 
-module.exports = {
+module.exports = (_, argv) => ({
   output: {
-    publicPath: 'http://localhost:3003/'
+    publicPath:
+      argv.mode === 'development' ? 'http://localhost:3003/' : 'https://module-federation-poc-white.vercel.app'
   },
 
   resolve: {
@@ -51,8 +52,12 @@ module.exports = {
       name: 'producer-white',
       filename: 'remoteEntry.js',
       remotes: {
-        'mf-product': 'product@http://localhost:3001/remoteEntry.js',
-        'mf-sales': 'sales@http://localhost:3005/remoteEntry.js'
+        'mf-product': `product@${
+          argv.mode === 'development' ? 'http://localhost:3001/' : 'https://module-federation-poc-white.vercel.app'
+        }/remoteEntry.js`,
+        'mf-sales': `sales@${
+          argv.mode === 'development' ? 'http://localhost:3005/' : 'https://module-federation-poc-white.vercel.app'
+        }/remoteEntry.js`
       },
       exposes: {},
       shared: {
@@ -83,4 +88,4 @@ module.exports = {
       template: './src/index.html'
     })
   ]
-};
+});
