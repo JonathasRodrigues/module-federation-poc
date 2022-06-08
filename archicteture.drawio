@@ -1,0 +1,78 @@
+<mxfile host="65bd71144e">
+    <diagram id="_De-BAiJNRQcf56MGhLl" name="POC">
+        <mxGraphModel dx="650" dy="353" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="product&lt;br&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="75" y="540" width="230" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="sales" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="540" width="230" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" style="edgeStyle=none;html=1;" parent="1" source="6" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" style="edgeStyle=none;html=1;entryX=0.304;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="6" target="18" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" style="edgeStyle=none;html=1;" parent="1" source="6" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="producer-black" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="295" y="30" width="380" height="380" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Create" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="680" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=none;html=1;" parent="1" source="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="205.00000000000023" y="780" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="8" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="producer-white&lt;br&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="910" width="290" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="List" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="720" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="List" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="425" y="680" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="My Sales" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="240" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Create New Product" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="280" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="List Products" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="320" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="access-control" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="540" width="230" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="List" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="705" y="680" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Create" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="705" y="720" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Access Control" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="360" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="My Sales" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="425" y="1080" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Create New Product" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="425" y="1120" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="List Products" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="425" y="1160" width="120" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
