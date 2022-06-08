@@ -1,2 +1,3 @@
 /// <reference types="react" />
-export declare const List: () => JSX.Element;
+declare const List: () => JSX.Element;
+export default List;

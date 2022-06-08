@@ -4,9 +4,10 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 
 const deps = require('./package.json').dependencies;
 
-module.exports = {
+module.exports = (_, argv) => ({
   output: {
-    publicPath: 'http://localhost:3001/'
+    publicPath:
+      argv.mode === 'development' ? 'http://localhost:3001/' : 'https://module-federation-poc-product.vercel.app'
   },
 
   resolve: {
@@ -66,4 +67,4 @@ module.exports = {
       template: './src/index.html'
     })
   ]
-};
+});
