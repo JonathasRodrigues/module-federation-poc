@@ -49,7 +49,7 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: 'producer-white',
+      name: 'belt-white',
       filename: 'remoteEntry.js',
       remotes: {
         'mf-product': 'product@http://localhost:3001/remoteEntry.js',
@@ -84,4 +84,4 @@ module.exports = (_, argv) => ({
       template: './src/index.html'
     })
   ]
-};
+});
