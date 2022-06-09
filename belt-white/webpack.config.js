@@ -65,18 +65,6 @@ module.exports = (_, argv) => ({
         'react-dom': {
           singleton: true,
           requiredVersion: deps['react-dom']
-        },
-        '@eduzz/houston-ui': {
-          singleton: true,
-          requiredVersion: deps['@eduzz/houston-ui']
-        },
-        '@eduzz/houston-styles': {
-          singleton: true,
-          requiredVersion: deps['@eduzz/houston-styles']
-        },
-        'react-router-dom': {
-          singleton: true,
-          requiredVersion: deps['react-router-dom']
         }
       }
     }),
