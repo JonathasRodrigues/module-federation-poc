@@ -7,7 +7,7 @@ const deps = require('./package.json').dependencies;
 module.exports = (_, argv) => ({
   output: {
     publicPath:
-      argv.mode === 'development' ? 'http://localhost:3003/' : 'https://module-federation-poc-white.vercel.app'
+      argv.mode === 'development' ? 'http://localhost:3003/' : 'https://module-federation-poc-product.vercel.app'
   },
 
   resolve: {
@@ -52,9 +52,8 @@ module.exports = (_, argv) => ({
       name: 'producer-white',
       filename: 'remoteEntry.js',
       remotes: {
-        'mf-product': `product@${
-          argv.mode === 'development' ? 'http://localhost:3001/' : 'https://module-federation-poc-product.vercel.app'
-        }/remoteEntry.js`
+        'mf-product': 'product@http://localhost:3001/remoteEntry.js',
+        'mf-sales': 'sales@http://localhost:3005/remoteEntry.js'
       },
       exposes: {},
       shared: {
@@ -85,4 +84,4 @@ module.exports = (_, argv) => ({
       template: './src/index.html'
     })
   ]
-});
+};
