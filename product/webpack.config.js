@@ -4,10 +4,9 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 
 const deps = require('./package.json').dependencies;
 
-module.exports = (_, argv) => ({
+module.exports = {
   output: {
-    publicPath:
-      argv.mode === 'development' ? 'http://localhost:3001/' : 'https://module-federation-poc-product.vercel.app'
+    publicPath: 'http://localhost:3003/'
   },
 
   resolve: {
@@ -15,7 +14,7 @@ module.exports = (_, argv) => ({
   },
 
   devServer: {
-    port: 3001,
+    port: 3003,
     historyApiFallback: true
   },
 
@@ -67,4 +66,4 @@ module.exports = (_, argv) => ({
       template: './src/index.html'
     })
   ]
-});
+};

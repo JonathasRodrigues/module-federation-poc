@@ -6,7 +6,7 @@ const deps = require('./package.json').dependencies;
 
 module.exports = {
   output: {
-    publicPath: 'http://localhost:3005/'
+    publicPath: 'http://localhost:3004/'
   },
 
   resolve: {
@@ -14,7 +14,7 @@ module.exports = {
   },
 
   devServer: {
-    port: 3005,
+    port: 3004,
     historyApiFallback: true
   },
 
@@ -58,14 +58,6 @@ module.exports = {
         'react-dom': {
           singleton: true,
           requiredVersion: deps['react-dom']
-        },
-        '@eduzz/houston-ui': {
-          singleton: true,
-          requiredVersion: deps['@eduzz/houston-ui']
-        },
-        '@eduzz/houston-styles': {
-          singleton: true,
-          requiredVersion: deps['@eduzz/houston-styles']
         }
       }
     }),
