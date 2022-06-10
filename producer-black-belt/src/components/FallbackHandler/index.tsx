@@ -25,7 +25,7 @@ export default class FallbackHandler extends React.Component<Props, State> {
 
   render() {
     if (this.state.hasError) {
-      return <React.Suspense fallback={<div>Loading fallback...</div>}>{this.props.fallback}</React.Suspense>;
+      return <p>Ocorreu um erro</p>;
     }
 
     return <React.Suspense fallback={<div>Loading...</div>}>{this.props.children}</React.Suspense>;
